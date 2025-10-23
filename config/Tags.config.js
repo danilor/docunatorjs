@@ -34,6 +34,15 @@ module.exports = {
         regex: new RegExp('(?:@since\\s)(.+)', 'i'),
         type:'single'
     },
+    return:{
+        key: 'return',
+        regex: new RegExp('(?:@returns\\s)\\{(\\S+)\\}\\s\\-?\\s?(.+)', 'ig'),
+        type:'array',
+        indexes:[
+            'type',
+            'description'
+        ]
+    },
     link:{
         key: 'link',
         regex: regex = new RegExp('(?:@link\\s)(\\S+)', 'ig'),
