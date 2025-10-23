@@ -29,6 +29,11 @@ module.exports = {
         regex: new RegExp('(?:@deprecated\\s)(.+)', 'i'),
         type:'single'
     },
+    license:{
+        key: 'license',
+        regex: new RegExp('(?:@license\\s)(.+)', 'i'),
+        type:'single'
+    },
     since:{
         key: 'since',
         regex: new RegExp('(?:@since\\s)(.+)', 'i'),

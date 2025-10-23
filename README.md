@@ -61,5 +61,6 @@ npx docunatorjs --help
  - version
  - since
  - deprecated
+ - license
  - return
 
