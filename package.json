@@ -1,0 +1,32 @@
+{
+  "name": "docunatorjs",
+  "version": "0.0.1",
+  "description": "A small stand-alone library to extract comments to be used as documentation",
+  "keywords": [
+    "documentation",
+    "docunator",
+    "js",
+    "library",
+    "js",
+    "extractor"
+  ],
+  "homepage": "https://github.com/danilor/docunatorjs#readme",
+  "bugs": {
+    "url": "https://github.com/danilor/docunatorjs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danilor/docunatorjs.git"
+  },
+  "license": "Apache-2.0",
+  "author": "Danilo Ramirez Mattey",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cli-progress": "^3.12.0",
+    "commander": "^14.0.1"
+  }
+}
