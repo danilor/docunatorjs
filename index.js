@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 /**
  * Requirements
  */
@@ -13,7 +14,7 @@ const processComments = require('./Util/ProcessComments');
 /**
  * END of Requirements
  */
-Console.s().title('Docunator JS').s();
+// Console.s().title('Docunator JS').s();
 
 /**
  * Processes files in the input directory.

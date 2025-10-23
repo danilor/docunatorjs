@@ -1,6 +1,6 @@
 {
   "name": "docunatorjs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A small stand-alone library to extract comments to be used as documentation",
   "keywords": [
     "documentation",
@@ -23,10 +23,15 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "release": "release-it",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pub": "npm run release"
   },
   "dependencies": {
     "cli-progress": "^3.12.0",
     "commander": "^14.0.1"
+  },
+  "bin": {
+    "docunator": "./index.js"
   }
 }
