@@ -1,6 +1,6 @@
 {
   "name": "docunatorjs",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A small stand-alone library to extract comments to be used as documentation",
   "keywords": [
     "documentation",

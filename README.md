@@ -44,7 +44,7 @@ npx danilor/docunatorjs -I ./src -O ./docs/documentation.json
 For more options and available paramters, please use the --help flag:
 
 ```bash
-npx danilor/docunatorjs--help
+npx danilor/docunatorjs --help
 ```
 
 ## Available Tags
