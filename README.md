@@ -1,5 +1,7 @@
 # Docunator JS (Work in progress)
 
+![LOGO](logo.png)
+
 A simplistic JavaScript library for generating documentation from code comments. Docunator JS helps developers create well-structured and easy-to-read documentation for their projects.
 The resulting file is a JSON object that can be further processed or converted into various formats like HTML, Markdown, etc.
 
