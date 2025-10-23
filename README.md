@@ -38,13 +38,13 @@ Add the @docunator tag to your code comments to indicate that they should be inc
 Then you can execute Docunator JS to generate the documentation.
 
 ```bash
-npx docunatorjs -I ./src -O ./docs/documentation.json
+npx danilor/docunatorjs -I ./src -O ./docs/documentation.json
 ```
 
 For more options and available paramters, please use the --help flag:
 
 ```bash
-npx docunatorjs --help
+npx danilor/docunatorjs--help
 ```
 
 ## Available Tags
