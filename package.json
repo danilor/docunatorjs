@@ -25,7 +25,7 @@
   "scripts": {
     "release": "release-it",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "pub": "npm run release"
+    "pub": "npm publish --access public"
   },
   "dependencies": {
     "cli-progress": "^3.12.0",
