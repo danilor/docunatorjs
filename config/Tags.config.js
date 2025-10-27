@@ -56,9 +56,24 @@ module.exports = {
             'url'
         ]
     },
+    example:{
+        key: 'example',
+        regex: regex = new RegExp('(?:@example)\\s\\{(.{1,4})\\}(.+)\\{\\\/(.{1,4})\\}', 'gmis'),
+        type: 'array',
+        indexes:[
+            'lang',
+            'code',
+            'closeLang'
+        ]
+    },
     see:{
         key: 'see',
         type: 'array',
+        regex: regex = new RegExp('(?:@see\\s)(\\S+)', 'ig'),
+        type: 'array',
+        indexes:[
+            'reference'
+        ]
     },
     params:{
         key: 'params',

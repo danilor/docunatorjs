@@ -12,6 +12,8 @@ async function processSingleComment(comment) {
     const obj = {};
     const keys = Object.keys(Tags);
 
+    // Console.c('Processing comment:').s().c(comment).s();
+
     for (const key of keys) {
 
         const tag = Tags[key];

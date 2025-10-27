@@ -8,11 +8,15 @@ The resulting file is a JSON object that can be further processed or converted i
 ## Usage
 
 Add the @docunator tag to your code comments to indicate that they should be included in the documentation.
+Additionally, you can use different tags besides @docunator to provide more information about the documented item.
+That way, you can generate several different documentations from within the same codebase.
 
 ```javascript
 /**
  * @docunator
  * @title ZenButton
+ * @author Danilo Ramírez Mattey
+ * @version 1.0.0
  * @description A simple button component that can be used throughout the app. It supports different types (primary, secondary, success, info, warning, danger) and all of them are styled according to the current theme. The text color will be automatically selected based on the brightness of the button color, but it can be overwritten by passing a textColor prop.
  * @category Themed Components
  * @param {string} title The title of the button
@@ -30,7 +34,26 @@ Add the @docunator tag to your code comments to indicate that they should be inc
  * @param {Element} rightAccessory - A right accessory. Accepts any valid React Node.
  * @param {boolean} disabled - Whether the button is disabled. Default is false.
  * @param {StyleSheet} style - Additional styles for the button container.
- *
+ * @example {tsx}
+
+ import { ZenButton } from 'react-zen-ui';
+ import { View } from 'react-native';
+
+ export default function App(){
+ return (
+ <View style={{ padding: 20 }}>
+ <ZenButton
+ title="Click Me"
+ type="primary"
+ onPress={() => alert('Button Pressed!')}
+ leftIcon="yoga"
+ rightIcon="bonfire"
+ />
+ </View>
+ );
+ }
+
+ {/tsx}
  * @link https://github.com/danilor/zen-ui
  * @link https://github.com/danilor/zen-ui/blob/main/example/src/components/examples/ButtonExample.tsx
  *
@@ -65,4 +88,5 @@ npx danilor/docunatorjs --help
  - deprecated
  - license
  - return
+ - example (Requires starting and closing tags)
 
