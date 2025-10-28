@@ -32,6 +32,6 @@
     "commander": "^14.0.1"
   },
   "bin": {
-    "docunator": "./index.js"
+    "docunator": "index.js"
   }
 }
