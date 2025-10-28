@@ -24,6 +24,26 @@ module.exports = {
         regex: new RegExp('(?:@version\\s)(.+)', 'i'),
         type:'single'
     },
+    type:{
+        key: 'type',
+        regex: new RegExp('(?:@type\\s)(.+)', 'i'),
+        type:'single'
+    },
+    access:{
+        key: 'access',
+        regex: new RegExp('(?:@access\\s)(.+)', 'i'),
+        type:'single'
+    },
+    experimental:{
+        key: 'experimental',
+        regex: new RegExp('(?:@experimental\\s)(.+)', 'i'),
+        type:'single'
+    },
+    copyright:{
+        key: 'copyright',
+        regex: new RegExp('(?:@copyright\\s)(.+)', 'i'),
+        type:'single'
+    },
     deprecated:{
         key: 'deprecated',
         regex: new RegExp('(?:@deprecated\\s)(.+)', 'i'),
@@ -32,6 +52,16 @@ module.exports = {
     license:{
         key: 'license',
         regex: new RegExp('(?:@license\\s)(.+)', 'i'),
+        type:'single'
+    },
+    order:{
+        key: 'order',
+        regex: new RegExp('(?:@order\\s)(.+)', 'i'),
+        type:'single'
+    },
+    group:{
+        key: 'group',
+        regex: new RegExp('(?:@group\\s)(.+)', 'i'),
         type:'single'
     },
     since:{
@@ -81,6 +111,15 @@ module.exports = {
         type: 'array',
         indexes: [
             'type', 'name', 'description'
+        ]
+    },
+    errors:{
+        key: 'errors',
+        regex: new RegExp('(?:@error\\s)\\{(\\S+)\\}\\s\\-?\\s?(.+)', 'ig'),
+        type:'array',
+        indexes:[
+            'type',
+            'description'
         ]
     },
 }

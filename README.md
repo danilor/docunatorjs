@@ -74,19 +74,26 @@ npx danilor/docunatorjs --help
 
 ## Available Tags
 
- - title
- - description
- - category
- - param
+ - title [single]
+ - description [single]
+ - category [single]
+ - type [single]
+ - param [array]
    - {type} name description
- - link
+ - link [array]
    - url
- - see
- - author
- - version
- - since
- - deprecated
- - license
- - return
- - example (Requires starting and closing tags)
+ - see [array]
+ - author [single]
+ - version [single]
+ - since [single]
+ - deprecated [single]
+ - license [single]
+ - return [array]
+ - example (Requires starting and closing tags) [array]
+   - {language} CODE {/language}
+ - order [single]
+ - group [single]
+ - access [single]
+ - copyright [single]
+ - experimental [single]
 
