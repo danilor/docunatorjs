@@ -66,11 +66,38 @@ Then you can execute Docunator JS to generate the documentation.
 npx danilor/docunatorjs -I ./src -O ./docs/documentation.json
 ```
 
-For more options and available paramters, please use the --help flag:
+For more options and available parameters, please use the --help flag:
 
 ```bash
 npx danilor/docunatorjs --help
+
+Usage: docunator-js [options]
+
+Docunator JS is an automatic documentation generator for Typescript/JavaScript projects.
+
+Options:
+  -V, --version              output the version number
+  -c, --config <string>      Path to custom configuration file (default: "./docunator.config.json")
+  -O, --output <string>      The output path for the generated JSON file (default: "./docs.json")
+  -I, --input <items>        The list of input path of the project to document (default: ["./src"])
+  -A, --include <items>      Comma-separated list of file extensions to include (default: ["js","ts","tsx","jsx","mjs"])
+  -D, --declarator <string>  The declarator tag for the comments to be read (default: "@docunator")
+  -h, --help                 display help for command
 ```
+
+Also, you can create a configuration file named `docunator.config.json` in your project root with the following structure:
+
+```json
+{
+  "input": ["./src"],
+  "output": "./docs/documentation.json",
+  "include": ["js", "ts", "tsx", "jsx", "mjs"],
+  "declarator": "@docunator"
+}
+```
+The configuration file does not need to include all the parameters; only the ones you want to customize. 
+The parameters on the CLI will override the ones in the configuration file.
+
 
 ## Available Tags
 

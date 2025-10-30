@@ -1,0 +1,6 @@
+module.exports = {
+    input: ['./src'],
+    output: 'docs.json',
+    include: ['.js', '.ts', '.tsx', '.jsx', '.mjs'],
+    declarator: '@docunator'
+}

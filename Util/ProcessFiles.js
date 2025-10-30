@@ -1,14 +1,14 @@
 const Console = require("../class/Console.class");
 const cliProgress = require('cli-progress');
 const extractCommentsFromFile = require('./../Util/ExtractComments');
-const program = require('./../config/Program.config');
 
 /**
  * Processes a list of files to extract comments based on the declarator tag.
  * @param files
+ * @param declarator
  * @returns {Promise<void>}
  */
-module.exports = async function processFiles(files){
+module.exports = async function processFiles(files, declarator){
     Console.s('Extracting each file content and processing...');
     const readingBar = new cliProgress.SingleBar({
         stopOnComplete: true,
@@ -17,7 +17,7 @@ module.exports = async function processFiles(files){
     readingBar.start(files.length, 0);
     const comments = [];
     for(const filePath of files) {
-        const comment = await extractCommentsFromFile(filePath, `${program.opts().declarator}`);
+        const comment = await extractCommentsFromFile(filePath, `${declarator}`);
         readingBar.increment();
         if( comment !== null && comment.length > 0){
             for (const c of comment) {
