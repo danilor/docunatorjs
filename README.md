@@ -123,4 +123,5 @@ The parameters on the CLI will override the ones in the configuration file.
  - access [single]
  - copyright [single]
  - experimental [single]
+ - snack [array]
 

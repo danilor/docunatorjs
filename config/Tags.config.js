@@ -105,6 +105,15 @@ module.exports = {
             'reference'
         ]
     },
+    snack:{
+        key: 'snack',
+        type: 'array',
+        regex: regex = new RegExp('(?:@snack\\s)(\\S+)', 'ig'),
+        type: 'array',
+        indexes:[
+            'id'
+        ]
+    },
     params:{
         key: 'params',
         regex: new RegExp('(?:@param\\s)\\{(\\S+)\\}\\s(\\S+)\\s\\-?\\s?(.+)', 'ig'),
